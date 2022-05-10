@@ -1,0 +1,35 @@
+while True:
+    def addition (a,b):
+        result = a + b 
+        print(a , operator , b , "=" , result)
+
+    def subtraction (a,b):
+        result = a - b
+        print(a , operator , b , "=" , result)
+
+    def multiplication(a,b):
+        result = a * b
+        print(a , operator , b , "=" , result)
+
+    def division(a,b):
+        result = a / b
+        print(a , operator , b , "=" , result)
+
+    a = float(input("Enter First Number for Calculation: "))
+    operator = input("Enter Operator for Calculation: ")
+    b = float(input("Enter Second Number for Calculation: "))
+
+    if operator == "+":
+        addition(a, b)
+
+    elif operator == "-":
+        subtraction(a, b)
+
+    elif operator == "*":
+        multiplication(a, b)
+
+    elif operator == "/":
+        division(a, b)
+
+    else:
+        print("Something is Missing... Try Again!")    
